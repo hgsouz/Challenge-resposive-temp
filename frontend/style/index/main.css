@@ -6,6 +6,10 @@
   padding: 0 1rem;
 }
 
+#title {
+  text-align: center;
+}
+
 .important-card {
   background-color: #641226;
   padding: 2.5rem 2rem;
