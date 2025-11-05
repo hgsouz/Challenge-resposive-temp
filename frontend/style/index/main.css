@@ -1,9 +1,7 @@
 #info {
   max-width: 90%;
 
-  margin: 2rem auto;
-
-  padding: 5rem 1rem;
+  margin: 4rem 2rem;
 }
 
 #title {
@@ -42,9 +40,7 @@
   max-width: 90%;
 
   text-align: center;
-  margin: 2rem auto;
-
-  padding-block: 5rem;
+  margin: 6rem auto;
 }
 
 @media (min-width: 992px) {
