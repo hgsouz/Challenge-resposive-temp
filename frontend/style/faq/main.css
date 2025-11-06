@@ -17,8 +17,12 @@
 
   cursor: pointer;
 
+  & summary {
+    font-size: 1.05rem;
+  }
+
   & p {
-    color: #f1f1f1;
+    color: #d4d4d4;
     padding-top: 1rem;
   }
 }
