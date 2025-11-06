@@ -1,6 +1,6 @@
 #about {
   max-width: 90%;
-  margin-inline: 2rem;
+  margin-inline: auto;
 
   & h1 {
     margin: 4rem 0 2rem;

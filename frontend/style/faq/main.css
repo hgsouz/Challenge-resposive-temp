@@ -1,8 +1,6 @@
 #questions {
   max-width: 90%;
-  margin: 0 auto;
-
-  padding: 4rem 1rem;
+  margin: 4rem auto;
 }
 
 .question-card {
