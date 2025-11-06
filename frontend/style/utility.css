@@ -19,7 +19,7 @@
   background: -webkit-linear-gradient(#641226, #da345d);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-} 
+}
 
 .align-right {
   text-align: right;
@@ -48,7 +48,7 @@
   flex-direction: column;
 }
 
-@media(min-width: 992px){
+@media (min-width: 992px) {
   .title {
     font-size: 94px;
     margin-bottom: 0.625rem;
@@ -61,7 +61,7 @@
   .title3 {
     font-size: 32px;
   }
-  
+
   .navigation {
     margin: 3.75rem 4rem;
     gap: 2.5rem;
@@ -85,14 +85,14 @@
 .navigation {
   width: 90%;
   margin: auto;
-  
+
   border-radius: 1.5rem;
-  
+
   position: sticky;
   top: 2rem;
 
   align-items: center;
-  
+
   filter: drop-shadow(-1px 3px 7px #000000);
   background: #000000;
   background: linear-gradient(
@@ -110,7 +110,40 @@
 
   align-items: center;
 
-  margin-left: .5rem;
+  margin-left: 0.5rem;
+}
+
+.mobile-menu-btn {
+  margin: 0 2rem 0 auto;
+
+  & button {
+    color: #f1f1f1;
+    border: none;
+    background: none;
+  }
+}
+
+#mobile-menu {
+  display: none;
+
+  max-width: 90%;
+  margin: 33px auto;
+
+  & nav {
+    padding: 1rem;
+    filter: drop-shadow(-1px 3px 7px #000000);
+    background: #000000;
+    background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(218, 52, 93, 1) 100%
+    );
+  }
+
+  & ul {
+    list-style: none;
+    gap: 0.5rem;
+  }
 }
 
 .login-btn {
@@ -181,7 +214,7 @@
   margin: auto;
 }
 
-#menu-footer{
+#menu-footer {
   border-top: 1px solid #000000;
 }
 
@@ -211,8 +244,8 @@
   display: none;
 }
 
-@media(min-width: 992px){
-  #menu{
+@media (min-width: 992px) {
+  #menu {
     display: flex;
   }
 
@@ -226,7 +259,7 @@
     & ul {
       margin-left: 3rem;
       flex-direction: row;
-      
+
       & li:hover {
         border-bottom: 1px solid #da345d;
       }
@@ -239,7 +272,7 @@
     border-bottom: none;
     border-right: 1px solid #da345d;
   }
-  
+
   #rights {
     flex-direction: row;
     padding: 0.5rem 3.75rem;
