@@ -1,9 +1,12 @@
 function openMenu() {
   const menuMobile = document.getElementById("mobile-menu");
+  const header = document.querySelector(".navigation");
 
-  if (menuMobile.style.display === "block") {
-    menuMobile.style.display = "none";
+  if (menuMobile.classList.contains("open")) {
+    menuMobile.classList.remove("open");
+    header.classList.remove("menu-open");
   } else {
-    menuMobile.style.display = "block";
+    menuMobile.classList.add("open");
+    header.classList.add("menu-open");
   }
 }
