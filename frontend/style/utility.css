@@ -48,40 +48,6 @@
   flex-direction: column;
 }
 
-@media (min-width: 992px) {
-  .title {
-    font-size: 94px;
-    margin-bottom: 0.625rem;
-  }
-
-  .title2 {
-    font-size: 48px;
-  }
-
-  .title3 {
-    font-size: 32px;
-  }
-
-  .navigation {
-    margin: 3.75rem 4rem;
-    gap: 2.5rem;
-    top: 3.75rem;
-
-    & ul {
-      list-style: none;
-      gap: 2.5rem;
-
-      & li {
-        border: 1px solid transparent;
-      }
-
-      & li:hover {
-        border-bottom-color: #da345d;
-      }
-    }
-  }
-}
-
 .navigation {
   width: 90%;
   margin: auto;
@@ -106,7 +72,7 @@
 }
 
 #mobile-menu {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: calc(2rem + 100px);
   left: 0;
@@ -315,12 +281,52 @@
 }
 
 @media (min-width: 992px) {
+  body {
+    padding-top: 150px;
+  }
+
+  .title {
+    font-size: 94px;
+    margin-bottom: 0.625rem;
+  }
+
+  .title2 {
+    font-size: 48px;
+  }
+
+  .title3 {
+    font-size: 32px;
+  }
+
+  .navigation {
+    gap: 2.5rem;
+    top: 3.75rem;
+
+    & ul {
+      list-style: none;
+      gap: 2.5rem;
+
+      & li {
+        border: 1px solid transparent;
+      }
+
+      & li:hover {
+        border-bottom-color: #da345d;
+      }
+    }
+  }
+
   #menu {
     display: flex;
   }
 
-  #mobile-menu {
+  .mobile-menu-btn {
     display: none;
+  }
+
+  svg {
+    width: 15px;
+    height: 15px;
   }
 
   .login-btn {
@@ -341,7 +347,9 @@
   }
 
   #logo-footer {
-    padding-inline: 3.125rem;
+    padding-right: 8rem;
+    margin-left: 5%;
+    margin-right: 0;
 
     border-bottom: none;
     border-right: 1px solid #da345d;
@@ -350,5 +358,17 @@
   #rights {
     flex-direction: row;
     padding: 0.5rem 3.75rem;
+  }
+
+  #menu-footer {
+    display: flex;
+    align-items: center;
+
+    justify-content: left;
+
+    & nav {
+      margin-right: 5%;
+      margin-left: 0;
+    }
   }
 }

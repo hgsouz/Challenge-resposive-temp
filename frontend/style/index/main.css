@@ -55,6 +55,33 @@
   }
 }
 
+@media (min-width: 600px) {
+  #info {
+    max-width: 80%;
+  }
+
+  #card-text {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  #title-first-card,
+  #title-second-card,
+  #title-third-card {
+    text-align: center;
+  }
+
+  #motivation {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  #motivation {
+    max-width: 75%;
+  }
+}
+
 @media (min-width: 992px) {
   .important-card {
     padding: 3.5rem 6.25rem;
@@ -66,7 +93,19 @@
   }
 
   #title-first-card,
-  #title-second-card {
+  #title-third-card {
     text-align: right;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  #motivation {
+    max-width: 60%;
   }
 }

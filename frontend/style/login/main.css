@@ -1,3 +1,7 @@
+#body-login {
+  padding-top: 2rem;
+}
+
 #logo-login {
   height: 100px;
   width: 100px;
@@ -5,18 +9,22 @@
 
 #login-page {
   display: flex;
+  flex-direction: column;
   margin: auto;
 
   min-height: 100vh;
   max-width: fit-content;
   align-items: center;
 
-  gap: 18.75rem;
+  gap: 5rem;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+
+  width: 300px;
+  height: 350px;
 
   padding: 2.5rem;
 
@@ -34,7 +42,7 @@
     border: none;
     border-radius: 10px;
 
-    min-width: 400px;
+    min-width: fit-content;
   }
 
   & button {
@@ -57,4 +65,18 @@
 
 #text-login {
   font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  #body-login {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  #login-page {
+    flex-direction: row;
+
+    gap: 8rem;
+  }
 }
